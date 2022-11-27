@@ -14,18 +14,19 @@ main:
 
 Preferences:
 
-![alt text]([http://url/to/img.png](https://github.com/alshahari1/keylogger-Monitoing/blob/main/foverat.png))
+![alt text](https://github.com/alshahari1/keylogger-Monitoing/blob/main/foverat.png)
+
 
 records :
 
-![alt text]([http://url/to/img.png](https://github.com/alshahari1/keylogger-Monitoing/blob/main/reco.png)
+![alt text](https://github.com/alshahari1/keylogger-Monitoing/blob/main/reco.png)
 
 
 user panel :
 
-![alt text]([http://url/to/img.png](https://github.com/alshahari1/keylogger-Monitoing/blob/main/user.png))
+![alt text](https://github.com/alshahari1/keylogger-Monitoing/blob/main/user.png)
 
 
 browser :
 
-![alt text]([http://url/to/img.png](https://github.com/alshahari1/keylogger-Monitoing/blob/main/bro.png))
+![alt text](https://github.com/alshahari1/keylogger-Monitoing/blob/main/bro.png)
