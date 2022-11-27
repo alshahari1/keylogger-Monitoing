@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="943.0" stylesheets="@../css/black.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.snooper.app.controller.Help_and_SupportController">
+   <children>
+      <Pane layoutX="253.0" layoutY="41.0" prefHeight="52.0" prefWidth="943.0" style="-fx-background-color: #B11F1A;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="772.0" layoutY="13.0" text="الدعم والمساعدة">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="897.0" layoutY="11.0">
+               <image>
+                  <Image url="@../images/snooper.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="12.0" ripplerFill="#9a9a9a" style="-fx-background-radius: 20; -fx-background-color: #262121;" text="X" />
+            <JFXButton buttonType="RAISED" layoutX="57.0" layoutY="12.0" onAction="#goSnoopLogs" ripplerFill="#9a9a9a" style="-fx-background-radius: 20; -fx-background-color: #262121;" text="&lt;" />
+         </children>
+      </Pane>
+      <Pane layoutY="52.0" prefHeight="658.0" prefWidth="943.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="136.0" layoutX="763.0" layoutY="10.0">
+               <image>
+                  <Image url="@../img/Customer-Support-Icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="441.0" layoutY="19.0" text="Keylogger Mointring">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="607.0" layoutY="78.0" text="مفتاح الترخيص :">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="634.0" layoutY="124.0" text="رمز التفعيل :">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="202.0" layoutY="72.0" text="66BA9D1D-9EE8-4D81-8CA5-683D616E587C">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="526.0" layoutY="173.0" text="تاريخ اصدار قواعد البيانات :">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="312.0" layoutY="118.0" text="اظهار على Keylohher Mointring">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="367.0" layoutY="173.0" text="اليوم ،02:30م">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="610.0" layoutY="220.0" text="إصدار البرنامج :">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="456.0" layoutY="220.0" text="1.13.15 (b)">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="50.0" layoutY="29.0">
+               <image>
+                  <Image url="@../img/Customer-Icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="26.0" fitWidth="29.0" layoutX="738.0" layoutY="274.0">
+               <image>
+                  <Image url="@../img/1200px-Exclamation_flat_icon.svg.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="276.0" text="هذا التطبيق ليس مصمماً للاسٍتخدام في الغير مصرح به كالتجسس على غير الاجهزه الخاصه">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="126.0" layoutY="307.0" text="ما زال التطبيق تجريبياً ،وتعتبر هذه النسخة خاصة بمشروع التخرج لمصممين البرنامج">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="546.0" layoutY="364.0" text="اجابات الاسئلة المتداولة">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="495.0" layoutY="416.0" text="تلميحات حول استخدام التطبيق">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="660.0" layoutY="465.0" text="المجتمع">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="629.0" layoutY="511.0" text="ادوات الدعم">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="19.0" layoutY="612.0" text="© Keylogger Monitring - جامعة العلوم والتكنلوجيا">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

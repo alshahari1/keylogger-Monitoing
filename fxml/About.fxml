@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="620.0" styleClass="root_parent" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.snooper.app.controller.AboutController">
+   <top>
+      <VBox>
+         <children>
+            <fx:include source="TitleBar.fxml" />
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <fx:include source="HomeBack.fxml" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="547.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="420.0" text="حول البرنامج">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <fx:include source="Footer.fxml" />
+   </bottom>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="198.0" prefWidth="561.0">
+         <children>
+            <FlowPane alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="94.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Hyperlink onAction="#goGithub" text="Keylogger Monitring" />
+                  <Label text="هو برنامج لمراقبة وتسجيل ضغطات المفاتيح قمنا بتعديل وتطوير الكود الخاص بالبرنامج" />
+                  <Label text="من اجل جعله اكثر كفاءه ومرونة ودقة لمراقبة الموظفين وايضا للمراقبة الابوية" />
+                  <Label text="تطوير المهندس : عبدالوهاب الشهاري" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </FlowPane>
+            <HBox alignment="CENTER_LEFT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="46.0" prefWidth="600.0" spacing="30.0">
+               <children>
+                  <Label text="لستقبال التبرعات" />
+                  <Hyperlink onAction="#goPatreon" />
+                  <ImageView fx:id="patreonImageView" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" />
+                  <Hyperlink onAction="#goPaypal">
+                     <graphic>
+                        <ImageView fx:id="paypalImageView" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="90.0" spacing="30.0">
+               <children>
+                  <Label text="كود المصدر" />
+                  <Hyperlink onAction="#goSourceCode" prefHeight="29.0" prefWidth="44.0" />
+                  <ImageView fx:id="sourceCodeImageView" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

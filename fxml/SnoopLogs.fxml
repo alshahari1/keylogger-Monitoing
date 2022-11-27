@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="620.0" styleClass="root_parent" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.snooper.app.controller.SnoopLogsController">
+   <top>
+      <VBox>
+         <children>
+            <fx:include source="TitleBar.fxml" />
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <fx:include source="HomeBack.fxml" />
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="543.0">
+                     <children>
+                        <Label text="...">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="سجلات التقاط لوحة المفاتيح - للمستخدم : ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <fx:include source="Footer.fxml" />
+   </bottom>
+   <center>
+      <SplitPane dividerPositions="0.3377926421404682" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <VBox prefHeight="284.0" prefWidth="204.0">
+               <children>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="199.0">
+                     <children>
+                        <ListView fx:id="sLogListView" layoutX="-39.0" layoutY="14.0" prefHeight="250.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="175.0" spacing="5.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#refreshSLogs" prefHeight="31.0" prefWidth="75.0" text="تحديث">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="sLogLeftButton" mnemonicParsing="false" onAction="#sLogLeft" text="&lt;" />
+                        <TextField fx:id="sLogPageTextField" prefHeight="25.0" prefWidth="45.0" />
+                        <Label fx:id="sLogMaxPageLabel" text="/1" />
+                        <Button fx:id="sLogRightButton" mnemonicParsing="false" onAction="#sLogRight" text="&gt;" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox>
+               <children>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="393.0">
+                     <children>
+                        <ListView fx:id="keyLogsListView" layoutX="80.0" layoutY="41.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="393.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="sLogFileSelectedLabel" prefHeight="40.0" prefWidth="186.0">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="10.0" />
+                           </padding>
+                        </Label>
+                        <Button fx:id="keyLogLeftButton" mnemonicParsing="false" onAction="#keyLogLeft" text="&lt;" />
+                        <TextField fx:id="keyLogPageTextField" prefHeight="25.0" prefWidth="50.0" />
+                        <Label fx:id="keyLogMaxPageLabel" text="/1" />
+                        <Button fx:id="keyLogRightButton" mnemonicParsing="false" onAction="#keyLogRight" text="&gt;" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+        </items>
+      </SplitPane>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

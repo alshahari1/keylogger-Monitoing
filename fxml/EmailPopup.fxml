@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="357.0" styleClass="root_parent" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.snooper.app.controller.EmailPopupController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="217.0" prefWidth="319.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="269.0" spacing="10.0">
+               <children>
+                  <Label fx:id="filenameLabel" text="filename.extension">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="السجل" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="53.0" prefWidth="315.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="emailTextField" prefHeight="35.0" prefWidth="202.0" promptText="youremail@sample.com">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="الايميل :" />
+               </children>
+            </HBox>
+            <Button fx:id="sendEmailButton" mnemonicParsing="false" onAction="#sendEmail" prefHeight="43.0" prefWidth="107.0" text="ارسال" />
+            <Button mnemonicParsing="false" onAction="#goSnoopLogs" prefHeight="45.0" prefWidth="104.0" text="رجوع" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </center>
+   <top>
+      <fx:include source="TitleBar.fxml" />
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</BorderPane>

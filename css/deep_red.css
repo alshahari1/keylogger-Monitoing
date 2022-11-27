@@ -1,0 +1,105 @@
+/*constants*/
+{
+	-fx-primary: #8B0000;
+	-fx-primary2: #3c0000;
+	
+	-fx-secondary: rgb(190,38,38);
+	-fx-secondary2: rgb(206,52,52);
+	
+	-fx-color-white: #fff;
+	
+	-fx-shadow: #e75a5a;
+	
+	-fx-acc: #ff8c8c;
+	-fx-foc: #ff8c8c;
+}
+
+/*base*/
+.root_parent {
+	-fx-effect: dropshadow(three-pass-box, -fx-shadow, 15,0,0,0);
+	-fx-background-insets: 10;
+}
+.root {
+	-fx-base: -fx-primary;
+	-fx-accent: -fx-acc;
+	-fx-focus-color: -fx-foc;
+	-fx-faint-focus-color: -fx-foc;
+}
+
+/*buttons*/
+.button {
+	-fx-background-radius: 50;
+}
+#x_button {
+	-fx-border-color: transparent;
+	-fx-background-color: transparent;
+	-fx-background-image: url('/images/x_PLAIN.png');
+	-fx-background-size: 15px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-text-fill: transparent;
+}
+#x_button:hover {
+	-fx-background-image: url('/images/x_HOVERED.png');
+}
+#back_button {
+	-fx-background-image: url('/images/back_button.png');
+	-fx-background-size: 24px;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-text-fill: transparent;
+}
+
+/*list view's list cells*/
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+	-fx-background-color: -fx-primary;
+	-fx-text-fill: -fx-color-white;
+}
+.list-cell:filled:selected:focused .label, .list-cell:filled:selected .label {
+	-fx-text-fill: -fx-color-white;
+}
+.list-cell:even {
+	-fx-background-color: -fx-secondary;
+	-fx-text-fill: -fx-color-white;
+}
+.list-cell:even .label {
+	-fx-text-fill: -fx-color-white;
+}
+.list-cell:odd {
+	-fx-background-color: -fx-secondary2;
+	-fx-text-fill: -fx-color-white;
+}
+.list-cell:odd .label {
+	-fx-text-fill: -fx-color-white;
+}
+
+/*context menu items*/
+.menu-item .label {
+	-fx-text-fill: -fx-color-white;
+}
+.menu-item:focused {
+	-fx-background-color: -fx-primary;
+}
+.menu-item:focused .label {
+	-fx-text-fill: -fx-color-white;
+}
+.menu-item {
+	-fx-background-color: -fx-secondary2;
+}
+.context-menu {
+	-fx-background-color: -fx-secondary2;
+	-fx-border-color: -fx-color-white;
+}
+
+/*combo box*/
+.combo-box-base {
+	-fx-background-radius: 50;
+}
+.combo-box-popup .list-view .list-cell:hover {
+	-fx-background-color: -fx-primary;
+	-fx-text-fill: -fx-color-white;
+}
+.combo-box .cell:selected {
+	-fx-background-color: -fx-primary;
+	-fx-text-fill: -fx-color-white;
+}

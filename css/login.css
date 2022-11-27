@@ -1,0 +1,18 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.JFXButton_login {
+    -fx-background-color: blue;
+    -fx-text-fill: #fff;
+}
+
+.JFXButton_exit {
+    -fx-background-color: red;
+    -fx-text-fill: #fff;
+}
+
